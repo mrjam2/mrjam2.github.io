@@ -1,7 +1,7 @@
 if($(window).width() > 500) {
-	let numberOfDrops = 400;
+	var numberOfDrops = 400;
 } else {
-	let numberOfDrops = 100;
+	var numberOfDrops = 100;
 }
 
 const board = document.getElementById("canvas");
