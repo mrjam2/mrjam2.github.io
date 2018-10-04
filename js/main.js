@@ -1,4 +1,9 @@
-let numberOfDrops = 400;
+if($(window).width() > 500) {
+	let numberOfDrops = 400;
+} else {
+	let numberOfDrops = 100;
+}
+
 const board = document.getElementById("canvas");
 const width = board.offsetWidth;
 
