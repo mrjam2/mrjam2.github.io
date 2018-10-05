@@ -355,9 +355,20 @@ body {
 	width: 18px;
 	transition: all 2s cubic-bezier(.56,-0.01,.53,.31);
 	
+	@media screen and (max-width: 375px) {
+		top: 53%;
+	    left: 76%;
+	    width: 9px;
+	}
+	
 	&.fall {
 		transform: rotate(105deg) translate(19px,16px);
 		transform-origin: bottom right;
+		
+		@media screen and (max-width: 375px) {
+			-webkit-transform: rotate(105deg) translate(5px, 21px);
+			transform: rotate(105deg) translate(5px, 21px);
+		}
 	}
 	
 	&.out {
@@ -365,11 +376,21 @@ body {
 		-webkit-animation: spin 2s linear reverse;
 	    -moz-animation: spin 2s linear reverse;
 	    animation: spin 2s linear reverse;
+	    
+	    @media screen and (max-width: 375px) {
+		    top: 90%;
+	    }
 	}
 	
 	img {
 		-webkit-transform: translate(-10px,6px);
 		transform: translate(-10px,6px);
+		
+		@media screen and (max-width: 375px) {
+			-webkit-transform: translate(-9px, -2px);
+			transform: translate(-9px, -2px);
+			
+		}
 	}
 }
 
@@ -379,14 +400,31 @@ body {
 	width: 18px;
 	transition: all 2s cubic-bezier(.56,-0.01,.53,.31);
 	
+	@media screen and (max-width: 375px) {
+		top: 53%;
+	    left: 60%;
+	    width: 9px;
+	}
+	
 	&.fall {
 		transform: rotate(105deg) translate(19px,16px);
 		transform-origin: bottom right;
+		
+		@media screen and (max-width: 375px) {
+			-webkit-transform: rotate(105deg) translate(5px, 21px);
+			transform: rotate(105deg) translate(5px, 21px);
+		}
 	}
 	
 	img {
 		-webkit-transform: translate(-6px, 8px);
 		transform: translate(-6px, 8px);
+		
+		@media screen and (max-width: 375px) {
+			-webkit-transform: translate(-7px, -2px);
+			transform: translate(-7px, -2px);
+			
+		}
 	}
 }
 
