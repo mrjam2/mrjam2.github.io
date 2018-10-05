@@ -340,6 +340,24 @@ body {
 	animation-fill-mode: backwards;
 }
 
+.plane {
+	position: absolute;
+	z-index: 2;
+	top: 200px;
+	width: 620px;
+	max-width: 50%;
+	animation: plane 10s linear 0s infinite;
+	
+	img {
+		width: 100%;
+	}
+}
+
+@keyframes plane {
+	from {right:-500px;}
+	to {right: 102%;}
+}
+
 @-webkit-keyframes wobble  {
 	0%  { -webkit-transform:  rotate(0deg); }
 	20%  { -webkit-transform:  rotate(2deg); }
