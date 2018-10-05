@@ -22,3 +22,14 @@ function createRain(numberOfDrops) {
 }
 
 createRain(numberOfDrops);
+
+$(document).ready(function() {
+	
+	$('.n').addClass('fall');
+	setTimeout(function() {
+		$('.d').addClass('fall');
+		setTimeout(function() {
+			$('.d').addClass('out');
+		}, 2000);
+	}, 2000);
+});

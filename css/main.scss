@@ -340,6 +340,56 @@ body {
 	animation-fill-mode: backwards;
 }
 
+.d, .n {
+	position: absolute;
+	z-index: 2;
+	
+	img {
+		width: 100%;
+	}
+}
+
+.d {
+	top: 41%;
+	left: 60%;
+	width: 18px;
+	transition: all 2s cubic-bezier(.56,-0.01,.53,.31);
+	
+	&.fall {
+		transform: rotate(105deg) translate(19px,16px);
+		transform-origin: bottom right;
+	}
+	
+	&.out {
+		top: 86%;
+		-webkit-animation: spin 2s linear reverse;
+	    -moz-animation: spin 2s linear reverse;
+	    animation: spin 2s linear reverse;
+	}
+	
+	img {
+		-webkit-transform: translate(-10px,6px);
+		transform: translate(-10px,6px);
+	}
+}
+
+.n {
+	top: 41%;
+	left: 54%;
+	width: 18px;
+	transition: all 2s cubic-bezier(.56,-0.01,.53,.31);
+	
+	&.fall {
+		transform: rotate(105deg) translate(19px,16px);
+		transform-origin: bottom right;
+	}
+	
+	img {
+		-webkit-transform: translate(-6px, 8px);
+		transform: translate(-6px, 8px);
+	}
+}
+
 .plane {
 	position: absolute;
 	z-index: 2;
@@ -371,6 +421,10 @@ body {
 	from {right:-500px;}
 	to {right: 102%;}
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 @-webkit-keyframes wobble  {
 	0%  { -webkit-transform:  rotate(0deg); }
